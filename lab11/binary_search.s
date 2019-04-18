@@ -31,7 +31,8 @@ la $s1, array
 # $t1 <- array_addr
 add $t1, $s1, $0
 # loop to get n elements
-loop:   li $v0, 4
+loop:
+li $v0, 4
 # ask for element
 la $a0, input_msg2
 syscall
